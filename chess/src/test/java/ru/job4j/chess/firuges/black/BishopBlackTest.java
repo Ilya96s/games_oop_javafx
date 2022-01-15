@@ -36,3 +36,4 @@ public class BishopBlackTest {
         bishopBlack.way(Cell.G5);
     }
 }
+

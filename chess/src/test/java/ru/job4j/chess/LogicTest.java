@@ -13,7 +13,7 @@ public class LogicTest {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.A1));
         logic.add(new BishopBlack(Cell.C3));
-        logic.move(Cell.A1, Cell.C3);
+        logic.move(Cell.A1, Cell.D4);
     }
 
     @Test (expected = FigureNotFoundException.class)
@@ -28,7 +28,7 @@ public class LogicTest {
     public void wheImpossibleMoveException()
             throws FigureNotFoundException, OccupiedCellException, ImpossibleMoveException {
         Logic logic = new Logic();
-        logic.add(new BishopBlack(Cell.A1));
-        logic.move(Cell.A2, Cell.A1);
+        logic.add(new BishopBlack(Cell.C1));
+        logic.move(Cell.C1, Cell.E4);
     }
 }
